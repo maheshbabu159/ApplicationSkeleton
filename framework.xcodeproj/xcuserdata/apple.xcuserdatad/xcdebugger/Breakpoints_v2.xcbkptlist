@@ -25,8 +25,8 @@
                   symbolName = "framework.GlobalVariables.globalUserDefaults.unsafeMutableAddressor : __ObjC.UserDefaults"
                   moduleName = "framework"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Desktop/Workspace/InterviewCodingiOSSwift-Motorola/framework/framework/Constants.swift"
-                  timestampString = "515518060.862456"
+                  urlString = "file:///Users/apple/Desktop/AppSkeleton/framework/Constants.swift"
+                  timestampString = "515532348.779929"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "12"
@@ -40,8 +40,8 @@
                   symbolName = "static framework.GlobalVariables.globalUserDefaults.getter : __ObjC.UserDefaults"
                   moduleName = "framework"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Desktop/Workspace/InterviewCodingiOSSwift-Motorola/framework/framework/Constants.swift"
-                  timestampString = "515518060.869814"
+                  urlString = "file:///Users/apple/Desktop/AppSkeleton/framework/Constants.swift"
+                  timestampString = "515532348.782961"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "12"
@@ -57,28 +57,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "framework/NewsFeedViewController.swift"
-            timestampString = "515521777.910452"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
-            landmarkName = "dataDelegate(reponseData:requestMethod:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "framework/NetworkManager.swift"
-            timestampString = "515438087.042877"
+            timestampString = "515532190.282714"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "request(type:parameters:delegate:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,13 +74,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "framework/NetworkManager.swift"
-            timestampString = "515438154.457112"
+            timestampString = "515532238.942607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "request(type:parameters:delegate:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static framework.NetworkManager.request (type : framework.GlobalVariables.RequestAPIType, parameters : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, delegate : framework.NetworkDelegate) -&gt; ()"
+                  moduleName = "framework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/AppSkeleton/framework/NetworkManager.swift"
+                  timestampString = "515532348.804548"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "2741">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static framework.NetworkManager.(request (type : framework.GlobalVariables.RequestAPIType, parameters : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, delegate : framework.NetworkDelegate) -&gt; ()).(closure #2)"
+                  moduleName = "framework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/AppSkeleton/framework/NetworkManager.swift"
+                  timestampString = "515532348.807742"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

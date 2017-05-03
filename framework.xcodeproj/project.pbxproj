@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1822BD981EB9F0CF00A425E7 /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1822BD951EB9F08C00A425E7 /* libMBProgressHUD.a */; };
 		1822BD9D1EB9F11800A425E7 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1822BD971EB9F08C00A425E7 /* MBProgressHUD.framework */; };
+		1847F60A1EBA5F3E0073E853 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F6091EBA5F3E0073E853 /* Reachability.swift */; };
 		188EB1911EB95B6C001BA348 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EB1901EB95B6C001BA348 /* UIImageViewExtensions.swift */; };
 		188EB1931EB95EFB001BA348 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 188EB1921EB95EFB001BA348 /* Readme.txt */; };
 		188EB1951EB96190001BA348 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EB1941EB96190001BA348 /* GlobalSettings.swift */; };
@@ -94,6 +95,8 @@
 /* Begin PBXFileReference section */
 		1822BD8F1EB9F08900A425E7 /* MBProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MBProgressHUD.xcodeproj; path = MBProgressHUD/MBProgressHUD.xcodeproj; sourceTree = SOURCE_ROOT; };
 		1822BD9E1EB9F1A400A425E7 /* Objective-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Objective-Bridging-Header.h"; sourceTree = "<group>"; };
+		1847F6061EBA5E720073E853 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		1847F6091EBA5F3E0073E853 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		188EB1901EB95B6C001BA348 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		188EB1921EB95EFB001BA348 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 		188EB1941EB96190001BA348 /* GlobalSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
@@ -160,16 +163,27 @@
 		1847F6031EBA3F330073E853 /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				18C590D61EB8CED5000FAEFE /* LogicHanglers */,
 				18C590DC1EB8CF9E000FAEFE /* AppLevel */,
+				1847F6071EBA5EA90073E853 /* Libraries */,
+				18C590D61EB8CED5000FAEFE /* FacadeHandlers */,
 				188EB18F1EB95B4A001BA348 /* Components */,
 			);
 			name = Others;
 			sourceTree = "<group>";
 		};
+		1847F6071EBA5EA90073E853 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1822BD8F1EB9F08900A425E7 /* MBProgressHUD.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
 		188EB18F1EB95B4A001BA348 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1847F6091EBA5F3E0073E853 /* Reachability.swift */,
+				1847F6061EBA5E720073E853 /* Reachability.h */,
 				188EB1901EB95B6C001BA348 /* UIImageViewExtensions.swift */,
 			);
 			name = Components;
@@ -212,6 +226,8 @@
 				18C5909C1EB8B777000FAEFE /* Main.storyboard */,
 				18C590A21EB8B777000FAEFE /* Assets.xcassets */,
 				18C590A41EB8B777000FAEFE /* LaunchScreen.storyboard */,
+				1822BD9E1EB9F1A400A425E7 /* Objective-Bridging-Header.h */,
+				18C590A71EB8B777000FAEFE /* Info.plist */,
 				18C590D51EB8CE87000FAEFE /* Model */,
 				18C590ED1EB8E674000FAEFE /* ViewControllers */,
 				1847F6031EBA3F330073E853 /* Others */,
@@ -249,20 +265,17 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		18C590D61EB8CED5000FAEFE /* LogicHanglers */ = {
+		18C590D61EB8CED5000FAEFE /* FacadeHandlers */ = {
 			isa = PBXGroup;
 			children = (
 				18C590D71EB8CF2A000FAEFE /* NetworkManager.swift */,
 			);
-			name = LogicHanglers;
+			name = FacadeHandlers;
 			sourceTree = "<group>";
 		};
 		18C590DB1EB8CF50000FAEFE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1822BD8F1EB9F08900A425E7 /* MBProgressHUD.xcodeproj */,
-				18C590A71EB8B777000FAEFE /* Info.plist */,
-				1822BD9E1EB9F1A400A425E7 /* Objective-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -454,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1847F60A1EBA5F3E0073E853 /* Reachability.swift in Sources */,
 				188EB1951EB96190001BA348 /* GlobalSettings.swift in Sources */,
 				18C590E21EB8CFF7000FAEFE /* GlobalSingleton.swift in Sources */,
 				18C590F01EB8E6DF000FAEFE /* BaseClassProtocols.swift in Sources */,

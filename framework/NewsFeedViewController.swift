@@ -167,6 +167,7 @@ extension NewsFeedViewController:NetworkDelegate{
         }
     }
     func networkError(errorMessage: String) {
+        self.refreshControl.endRefreshing()
         MBProgressHUD.hide(for: self.view, animated: true)
         self.showAlert(message: errorMessage)
         

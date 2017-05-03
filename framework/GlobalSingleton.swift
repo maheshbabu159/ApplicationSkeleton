@@ -20,4 +20,14 @@ class GlobalSingleton {
     }()
     
     // MARK: - Initialization Method
+    var isNetworkAvaiable :Bool = false
+    
+    func isNetworkAvailable() -> Bool{
+        
+        return isNetworkAvaiable
+    }
+    func setNetworkAvailable(aFlag:Bool) {
+        
+        isNetworkAvaiable = aFlag
+    }
 }

@@ -40,29 +40,34 @@ class NetworkManager: NSObject {
         request.httpMethod = type.rawValue as String
         
         //Start requesting
-        let task = URLSession.shared.dataTask(with: request as URLRequest) {
-            data, response, error in
-            
-            //Connection failed case
-            if error != nil {
-                DispatchQueue.main.async { // 2
-                    delegate.networkError(errorMessage: "Not connected to Internet!!")
-                }
-            }else{
+        if GlobalSingleton.sharedInstance.isNetworkAvailable(){
+            let task = URLSession.shared.dataTask(with: request as URLRequest) {
+                data, response, error in
                 
-                do{
-                    let jsonResult: Any = (try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers))
-                    
-                    delegate.dataDelegate(reponseData: jsonResult as AnyObject, requestMethod:requestMethod)
-                    
-                }catch{
+                //Connection failed case
+                if error != nil {
                     DispatchQueue.main.async { // 2
                         delegate.networkError(errorMessage: "Not connected to Internet!!")
                     }
+                }else{
+                    
+                    do{
+                        let jsonResult: Any = (try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers))
+                        
+                        delegate.dataDelegate(reponseData: jsonResult as AnyObject, requestMethod:requestMethod)
+                        
+                    }catch{
+                       
+                    }
                 }
             }
+            task.resume()
+        }else{
+            DispatchQueue.main.async { // 2
+                delegate.networkError(errorMessage: "Not connected to Internet!!")
+            }
         }
-        task.resume()
+
     }
     
     //Convert dictionary to json
