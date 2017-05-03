@@ -1,5 +1,5 @@
 # Swift Application Skeleton
-This application contains basic implementation of web services and offline data management to start with iOS application development.
+This application contains basic implementation consuming web services and offline data management to start with iOS application development.
 
 Used XCode 8.2.1, Swift 3.0 and iOS SDK
 Used https://newsapi.org/ openfor fetching data.
