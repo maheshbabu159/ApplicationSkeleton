@@ -21,7 +21,8 @@ class GlobalSingleton {
     
     // MARK: - Initialization Method
     var isNetworkAvaiable :Bool = false
-    
+    var netWorkStatusChecked :Bool = false
+
     func isNetworkAvailable() -> Bool{
         
         return isNetworkAvaiable

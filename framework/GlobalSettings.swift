@@ -23,4 +23,16 @@ class GlobalSettings{
         let dateString = dateFormatter.string(from:date as Date)
         return dateString
     }
+    class func isAppAlreadyLaunchedOnce()->Bool{
+        let defaults = UserDefaults.standard
+        
+        if let isAppAlreadyLaunchedOnce = defaults.string(forKey: "isAppAlreadyLaunchedOnce"){
+            print("App already launched : \(isAppAlreadyLaunchedOnce)")
+            return true
+        }else{
+            defaults.set(true, forKey: "isAppAlreadyLaunchedOnce")
+            print("App launched first time")
+            return false
+        }
+    }
 }

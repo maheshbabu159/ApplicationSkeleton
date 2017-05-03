@@ -49,6 +49,14 @@ class NewsFeedViewController: UIViewController, ShowsAlert {
         searchController.dimsBackgroundDuringPresentation = false
         tableView.tableHeaderView = searchController.searchBar
         
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(self.networkStatusChecked),
+            name: NSNotification.Name(rawValue: "NetworkStatusFirstChecked"),
+            object: nil)
+        
+    }
+    func networkStatusChecked(notification: NSNotification){
         self.refresView(deleteAction: false)
     }
 

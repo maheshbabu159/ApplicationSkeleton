@@ -15,9 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         GlobalSettings.setNavigationBarProperties()
         self.networkAvailabilityChecking()
-        
         return true
     }
 
@@ -28,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // be on the main thread, like this:
             DispatchQueue.main.async {
                 GlobalSingleton.sharedInstance.setNetworkAvailable(aFlag: true)
+                NotificationCenter.default.post(name: Notification.Name("NetworkStatusFirstChecked"), object: nil)
+
             }
         }
         reachability.whenUnreachable = { reachability in
@@ -35,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // be on the main thread, like this:
             DispatchQueue.main.async {
                 GlobalSingleton.sharedInstance.setNetworkAvailable(aFlag: false)
+                NotificationCenter.default.post(name: Notification.Name("NetworkStatusFirstChecked"), object: nil)
             }
         }
         
