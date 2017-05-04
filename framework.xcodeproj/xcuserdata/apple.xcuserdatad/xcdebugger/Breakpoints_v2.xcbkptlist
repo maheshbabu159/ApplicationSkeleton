@@ -26,7 +26,7 @@
                   moduleName = "framework"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/apple/Desktop/AppSkeleton/framework/Constants.swift"
-                  timestampString = "515532348.779929"
+                  timestampString = "515558932.007643"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "12"
@@ -41,7 +41,7 @@
                   moduleName = "framework"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/apple/Desktop/AppSkeleton/framework/Constants.swift"
-                  timestampString = "515532348.782961"
+                  timestampString = "515558932.019284"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "12"
@@ -74,45 +74,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "framework/NetworkManager.swift"
-            timestampString = "515532238.942607"
+            timestampString = "515558541.548937"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "request(type:parameters:delegate:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static framework.NetworkManager.request (type : framework.GlobalVariables.RequestAPIType, parameters : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, delegate : framework.NetworkDelegate) -&gt; ()"
-                  moduleName = "framework"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Desktop/AppSkeleton/framework/NetworkManager.swift"
-                  timestampString = "515532348.804548"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "2741">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static framework.NetworkManager.(request (type : framework.GlobalVariables.RequestAPIType, parameters : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, delegate : framework.NetworkDelegate) -&gt; ()).(closure #2)"
-                  moduleName = "framework"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Desktop/AppSkeleton/framework/NetworkManager.swift"
-                  timestampString = "515532348.807742"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

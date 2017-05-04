@@ -90,7 +90,43 @@ class NewsFeedViewController: UIViewController, ShowsAlert {
         
         let paramsDictionary:[String:String] = ["method": GlobalVariables.RequestAPIMethods.getNewsFeed.rawValue as String,"source":"techcrunch","apiKey":GlobalVariables.apiKey]
         MBProgressHUD.showAdded(to: self.view, animated: true)
-        NetworkManager.request(type: GlobalVariables.RequestAPIType.GET, parameters: paramsDictionary as [String : AnyObject], delegate: self)
+
+        NetworkManager.makeRequest(type: GlobalVariables.RequestAPIType.GET, parameters: paramsDictionary as [String : AnyObject], completion:  { (error:Bool, errorMessage:String, requestMethod:String, reponseData:AnyObject?) in
+        
+            if error {
+                self.refreshControl.endRefreshing()
+                MBProgressHUD.hide(for: self.view, animated: true)
+                self.showAlert(message: errorMessage)
+            }else{
+                switch requestMethod{
+                case GlobalVariables.RequestAPIMethods.getNewsFeed.rawValue as String as String :
+                    guard let rootDictionary = reponseData as? [String:AnyObject] else{
+                        return
+                    }
+                    guard let resultArray:[AnyObject] = rootDictionary["articles"] as? [AnyObject] else {
+                        return
+                    }
+                    //Insert all records to core data
+                    DispatchQueue.global(qos: .userInitiated).async { // 1
+                        for dictionary in resultArray{
+                            NewsFeed.insertObject(dictionary: dictionary as! [String:String], context:GlobalVariables.managedObjectContext)
+                        }
+                        DispatchQueue.main.async { // 2
+                            
+                            self.refreshControl.endRefreshing()
+                            MBProgressHUD.hide(for: self.view, animated: true)
+                            self.refresView(deleteAction: false)
+                        }
+                    }
+                    break
+                default:
+                    print("")
+                    
+                }
+            }
+        })
+        
+        //NetworkManager.request(type: GlobalVariables.RequestAPIType.GET, parameters: paramsDictionary as [String : AnyObject], delegate: self)
     }
     
     func filterContentForSearchText(searchText: String) {
