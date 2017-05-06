@@ -10,6 +10,18 @@
 		1822BD981EB9F0CF00A425E7 /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1822BD951EB9F08C00A425E7 /* libMBProgressHUD.a */; };
 		1822BD9D1EB9F11800A425E7 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1822BD971EB9F08C00A425E7 /* MBProgressHUD.framework */; };
 		1847F60A1EBA5F3E0073E853 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F6091EBA5F3E0073E853 /* Reachability.swift */; };
+		1847F60D1EBBBB780073E853 /* RetainCycleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F60C1EBBBB770073E853 /* RetainCycleExample.swift */; };
+		1847F60F1EBBBBF90073E853 /* DataStructers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F60E1EBBBBF90073E853 /* DataStructers.swift */; };
+		1847F6111EBBBC1C0073E853 /* FacadePracticeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F6101EBBBC1C0073E853 /* FacadePracticeClass.swift */; };
+		1847F6131EBBD5610073E853 /* ProtocolsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F6121EBBD5610073E853 /* ProtocolsExample.swift */; };
+		1847F6151EBC059A0073E853 /* OptionalsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F6141EBC059A0073E853 /* OptionalsExample.swift */; };
+		1847F6171EBC067A0073E853 /* ClassesStructres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F6161EBC067A0073E853 /* ClassesStructres.swift */; };
+		1847F6191EBC24A70073E853 /* ClousersExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F6181EBC24A70073E853 /* ClousersExample.swift */; };
+		1848D31A1EBD61D400F4B665 /* AccessControlExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1848D3191EBD61D400F4B665 /* AccessControlExample.swift */; };
+		1848D3401EBE099500F4B665 /* StaticLibraryUseExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1848D33F1EBE099500F4B665 /* StaticLibraryUseExample.swift */; };
+		1848D3471EBE0C8900F4B665 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1848D3461EBE0C8900F4B665 /* AssetsLibrary.framework */; };
+		1848D3491EBE0DB900F4B665 /* Debug-universal in Resources */ = {isa = PBXBuildFile; fileRef = 1848D3481EBE0DB900F4B665 /* Debug-universal */; };
+		1848D34B1EBE0DE400F4B665 /* libStaticLibraryExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1848D34A1EBE0DE400F4B665 /* libStaticLibraryExample.a */; };
 		188EB1911EB95B6C001BA348 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EB1901EB95B6C001BA348 /* UIImageViewExtensions.swift */; };
 		188EB1931EB95EFB001BA348 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 188EB1921EB95EFB001BA348 /* Readme.txt */; };
 		188EB1951EB96190001BA348 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EB1941EB96190001BA348 /* GlobalSettings.swift */; };
@@ -97,6 +109,18 @@
 		1822BD9E1EB9F1A400A425E7 /* Objective-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Objective-Bridging-Header.h"; sourceTree = "<group>"; };
 		1847F6061EBA5E720073E853 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		1847F6091EBA5F3E0073E853 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		1847F60C1EBBBB770073E853 /* RetainCycleExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetainCycleExample.swift; sourceTree = "<group>"; };
+		1847F60E1EBBBBF90073E853 /* DataStructers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructers.swift; sourceTree = "<group>"; };
+		1847F6101EBBBC1C0073E853 /* FacadePracticeClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadePracticeClass.swift; sourceTree = "<group>"; };
+		1847F6121EBBD5610073E853 /* ProtocolsExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolsExample.swift; sourceTree = "<group>"; };
+		1847F6141EBC059A0073E853 /* OptionalsExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalsExample.swift; sourceTree = "<group>"; };
+		1847F6161EBC067A0073E853 /* ClassesStructres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesStructres.swift; sourceTree = "<group>"; };
+		1847F6181EBC24A70073E853 /* ClousersExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClousersExample.swift; sourceTree = "<group>"; };
+		1848D3191EBD61D400F4B665 /* AccessControlExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessControlExample.swift; sourceTree = "<group>"; };
+		1848D33F1EBE099500F4B665 /* StaticLibraryUseExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticLibraryUseExample.swift; sourceTree = "<group>"; };
+		1848D3461EBE0C8900F4B665 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		1848D3481EBE0DB900F4B665 /* Debug-universal */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Debug-universal"; sourceTree = SOURCE_ROOT; };
+		1848D34A1EBE0DE400F4B665 /* libStaticLibraryExample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libStaticLibraryExample.a; path = "Debug-universal/libStaticLibraryExample.a"; sourceTree = "<group>"; };
 		188EB1901EB95B6C001BA348 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		188EB1921EB95EFB001BA348 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 		188EB1941EB96190001BA348 /* GlobalSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
@@ -129,6 +153,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1848D34B1EBE0DE400F4B665 /* libStaticLibraryExample.a in Frameworks */,
+				1848D3471EBE0C8900F4B665 /* AssetsLibrary.framework in Frameworks */,
 				1822BD9D1EB9F11800A425E7 /* MBProgressHUD.framework in Frameworks */,
 				1822BD981EB9F0CF00A425E7 /* libMBProgressHUD.a in Frameworks */,
 			);
@@ -163,6 +189,7 @@
 		1847F6031EBA3F330073E853 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				1847F60B1EBB73580073E853 /* Practice */,
 				18C590DC1EB8CF9E000FAEFE /* AppLevel */,
 				1847F6071EBA5EA90073E853 /* Libraries */,
 				18C590D61EB8CED5000FAEFE /* FacadeHandlers */,
@@ -174,9 +201,35 @@
 		1847F6071EBA5EA90073E853 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				1848D3481EBE0DB900F4B665 /* Debug-universal */,
 				1822BD8F1EB9F08900A425E7 /* MBProgressHUD.xcodeproj */,
 			);
 			name = Libraries;
+			sourceTree = "<group>";
+		};
+		1847F60B1EBB73580073E853 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				1847F60E1EBBBBF90073E853 /* DataStructers.swift */,
+				1847F60C1EBBBB770073E853 /* RetainCycleExample.swift */,
+				1847F6101EBBBC1C0073E853 /* FacadePracticeClass.swift */,
+				1847F6121EBBD5610073E853 /* ProtocolsExample.swift */,
+				1847F6141EBC059A0073E853 /* OptionalsExample.swift */,
+				1847F6161EBC067A0073E853 /* ClassesStructres.swift */,
+				1847F6181EBC24A70073E853 /* ClousersExample.swift */,
+				1848D3191EBD61D400F4B665 /* AccessControlExample.swift */,
+				1848D33F1EBE099500F4B665 /* StaticLibraryUseExample.swift */,
+			);
+			name = Practice;
+			sourceTree = "<group>";
+		};
+		1848D3451EBE0C8900F4B665 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1848D34A1EBE0DE400F4B665 /* libStaticLibraryExample.a */,
+				1848D3461EBE0C8900F4B665 /* AssetsLibrary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		188EB18F1EB95B4A001BA348 /* Components */ = {
@@ -205,6 +258,7 @@
 				18C590AF1EB8B77D000FAEFE /* frameworkTests */,
 				18C590BA1EB8B77D000FAEFE /* frameworkUITests */,
 				18C590961EB8B776000FAEFE /* Products */,
+				1848D3451EBE0C8900F4B665 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,7 +285,6 @@
 				18C590D51EB8CE87000FAEFE /* Model */,
 				18C590ED1EB8E674000FAEFE /* ViewControllers */,
 				1847F6031EBA3F330073E853 /* Others */,
-				18C590DB1EB8CF50000FAEFE /* Supporting Files */,
 			);
 			path = framework;
 			sourceTree = "<group>";
@@ -271,13 +324,6 @@
 				18C590D71EB8CF2A000FAEFE /* NetworkManager.swift */,
 			);
 			name = FacadeHandlers;
-			sourceTree = "<group>";
-		};
-		18C590DB1EB8CF50000FAEFE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		18C590DC1EB8CF9E000FAEFE /* AppLevel */ = {
@@ -440,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C590A61EB8B777000FAEFE /* LaunchScreen.storyboard in Resources */,
+				1848D3491EBE0DB900F4B665 /* Debug-universal in Resources */,
 				18C590A31EB8B777000FAEFE /* Assets.xcassets in Resources */,
 				188EB1931EB95EFB001BA348 /* Readme.txt in Resources */,
 				18C5909E1EB8B777000FAEFE /* Main.storyboard in Resources */,
@@ -471,16 +518,25 @@
 				188EB1951EB96190001BA348 /* GlobalSettings.swift in Sources */,
 				18C590E21EB8CFF7000FAEFE /* GlobalSingleton.swift in Sources */,
 				18C590F01EB8E6DF000FAEFE /* BaseClassProtocols.swift in Sources */,
+				1847F6131EBBD5610073E853 /* ProtocolsExample.swift in Sources */,
+				1847F6151EBC059A0073E853 /* OptionalsExample.swift in Sources */,
 				18C590EA1EB8D210000FAEFE /* NewsFeed+CoreDataProperties.swift in Sources */,
 				18C590A11EB8B777000FAEFE /* framework.xcdatamodeld in Sources */,
 				18C590D81EB8CF2A000FAEFE /* NetworkManager.swift in Sources */,
+				1847F60F1EBBBBF90073E853 /* DataStructers.swift in Sources */,
 				18C590F41EB8E820000FAEFE /* NewsFeedViewController.swift in Sources */,
 				188EB1981EB96356001BA348 /* NewsDetailsViewController.swift in Sources */,
 				18C590E71EB8D210000FAEFE /* NewsFeed+CoreDataClass.swift in Sources */,
+				1847F6191EBC24A70073E853 /* ClousersExample.swift in Sources */,
 				18C590991EB8B777000FAEFE /* AppDelegate.swift in Sources */,
+				1848D3401EBE099500F4B665 /* StaticLibraryUseExample.swift in Sources */,
+				1847F6171EBC067A0073E853 /* ClassesStructres.swift in Sources */,
 				18C590D21EB8CE84000FAEFE /* CommonOperations.swift in Sources */,
 				188EB1911EB95B6C001BA348 /* UIImageViewExtensions.swift in Sources */,
 				18C590DE1EB8CFBD000FAEFE /* Constants.swift in Sources */,
+				1847F60D1EBBBB780073E853 /* RetainCycleExample.swift in Sources */,
+				1848D31A1EBD61D400F4B665 /* AccessControlExample.swift in Sources */,
+				1847F6111EBBBC1C0073E853 /* FacadePracticeClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,6 +714,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = framework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/Debug-universal",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mahesh.framework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "framework/Objective-Bridging-Header.h";
@@ -671,6 +733,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = framework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/Debug-universal",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mahesh.framework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "framework/Objective-Bridging-Header.h";

@@ -10,10 +10,7 @@ import UIKit
 import CoreData
 
 class CommonOperations: NSObject {
-
-  
     class func fetchAllObjects(entityName:String, context:NSManagedObjectContext) -> NSArray {
-        
         // Initialize Fetch Request
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>()
         
@@ -35,7 +32,6 @@ class CommonOperations: NSObject {
         }
     }
     class func truncateAllObjects(entityName:String, context:NSManagedObjectContext) {
-        
         //Fetch object
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>()
         

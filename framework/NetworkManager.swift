@@ -13,7 +13,7 @@ class NetworkManager: NSObject {
     class func request(type:GlobalVariables.RequestAPIType, parameters:[String:AnyObject], delegate:NetworkDelegate) {
         
         //Create enum from method name
-        /*let requestMethod = parameters["method"] as! String
+        let requestMethod = parameters["method"] as! String
         
         var url:NSURL!
         var request:NSMutableURLRequest!
@@ -25,10 +25,6 @@ class NetworkManager: NSObject {
             break
         case .POST:
             url = NSURL(string: GlobalVariables.requestURL)
-            //Parse header filed values
-            /*request.setValue(GlobalVariables.request_content_type_value, forHTTPHeaderField: GlobalVariables.request_content_type_key)
-             request.setValue(GlobalVariables.x_parse_application_id_value, forHTTPHeaderField: GlobalVariables.x_parse_application_id_key)
-             request.setValue(GlobalVariables.x_parse_rest_api_value, forHTTPHeaderField: GlobalVariables.x_parse_rest_api_key)*/
             request.httpBody = NetworkManager.encodeParameters(parameters: parameters) as Data
             request = NSMutableURLRequest(url:url! as URL)
 
@@ -65,7 +61,7 @@ class NetworkManager: NSObject {
             DispatchQueue.main.async { // 2
                 delegate.networkError(errorMessage: "Not connected to Internet!!")
             }
-        }*/
+        }
 
     }
     class func makeRequest(type:GlobalVariables.RequestAPIType, parameters:[String:AnyObject], completion: @escaping (Bool, String, String, AnyObject?)->Void) {
